@@ -7,6 +7,12 @@ body{
 input[type=radio] {
     display: none;
   }
+  .intro{
+      padding: 10% 5% 0 5%;
+  }
+  h4{
+      font-weight: 300;
+  }
   .options{
       display: flex;
       justify-content: space-around;
