@@ -1,0 +1,117 @@
+
+
+body{
+    font-family: Roboto;
+    /* background: #24252A; */
+}
+input[type=radio] {
+    display: none;
+  }
+  .options{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  label{
+      padding: 1%;
+      margin: 1%;
+      width: 200px;
+      height: 200px;
+      border: 2px solid #A37DDF;
+      color: black;
+      background: white;
+      border-radius: 2px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      transition: all 0.2s ease-in-out;
+  }
+  label:hover{
+    transform: scale(1.05,1.05);
+    border: 2px solid #4AD494;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  h3{
+      padding-top: 25%;
+      font-weight: 300;
+  }
+h2{
+    color: #202020;
+}
+  .question{
+      padding: 10% 0 0 5%;
+  }
+
+button{
+  background-color: #A37DDF; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+  border-radius: 2px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+button:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    
+}
+#submit{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+  .modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+
+#modal-color {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 4px;
+    outline: none;
+  }
+
+
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#you-got{
+    font-weight: 300;
+}
