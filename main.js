@@ -83,7 +83,7 @@ $('#submit').on('click', function(e) {
   compute();
 
   // error message
-  if (choices_r.length<2 || choices_g.length<2 || choices_b<2){
+  if (choices_r.length<2 || choices_g.length<2 || choices_b.length<2){
     document.getElementById("not-enough").style.display = "block";
   }
   // no error
