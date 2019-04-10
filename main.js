@@ -98,8 +98,10 @@ $('#submit').on('click', function(e) {
   // modifying modal box and message
   var colorhex= componentToHex(color_r) + componentToHex(color_g) + componentToHex(color_b);
   $('#you-got').text("#"+colorhex);
-  document.getElementById("modal-answer").style.transition = "all 2s";
   document.getElementById("modal-answer").style.background = "#"+colorhex;
   document.body.style.background = "#"+colorhex;
+
+  // animate modal
+  $('#modal-color').stop().animate({opacity: 1}, 1000);
 });
 
