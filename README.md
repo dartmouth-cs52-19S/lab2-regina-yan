@@ -1,7 +1,7 @@
 # lab2-regina-yan
 lab2-regina-yan created by GitHub Classroom
 
-In this lab, I created a Buzzfeed-style quiz that takes the user's inputs and calculates a hex color value. The quiz is framed as a "palette", and the user adds certain amounts of cyan, magenta, and yellow to create their final color mix. The background and option boxes also update their colors in response to the user's inputs. 
+In this lab, I created a Buzzfeed-style quiz that takes the user's inputs and calculates a hex color value. The quiz is framed as a "palette", and the user adds certain amounts of cyan, magenta, and yellow to create their final color mix. The background and option boxes also update their colors in response to the user's inputs. I talked with Sheppard Somers about the assignment and we both tested each other's quizzes. 
 
 # What worked
 I'm really proud of how I got the background to update based on the user's clicks, and I think I found a clever way to convert cyan, magenta, and yellow values to RGB values, which were then converted to hex color. I like how the borders of the option boxes also turn into a darker shade of the background. 
