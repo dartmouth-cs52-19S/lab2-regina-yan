@@ -17,7 +17,7 @@ Hover feature when choosing options </br>
 <img width="500" alt="Screen Shot 2019-04-09 at 10 00 11 PM" src="https://user-images.githubusercontent.com/38498065/55847662-2e8f5980-5b18-11e9-81d0-20b5b6cc2981.png">
 
 Background changes after choosing an option </br>
-<img width="500" alt="Screen Shot 2019-04-09 at 10 00 33 PM" src="https://user-images.githubusercontent.com/38498065/55847660-2afbd280-5b18-11e9-8049-153c2c09437f.png">
+<img width="1003" alt="Screen Shot 2019-04-09 at 11 07 52 PM" src="https://user-images.githubusercontent.com/38498065/55880217-3e398d00-5b6e-11e9-8d48-de4ca4682329.png">
 
 Error message if not all questions were answered </br>
 <img width="500" alt="Screen Shot 2019-04-09 at 10 00 53 PM" src="https://user-images.githubusercontent.com/38498065/55847657-26371e80-5b18-11e9-8b4b-ce8f27512e08.png">
