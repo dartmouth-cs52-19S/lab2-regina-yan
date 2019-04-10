@@ -1,14 +1,5 @@
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body{
     font-family: Roboto;
-    /* background: #24252A; */
 }
 input[type=radio] {
     display: none;
@@ -16,9 +7,9 @@ input[type=radio] {
 .intro{
     padding: 3%;
     margin: 10% 3% 0 3%;
-    border: 2px solid #A37DDF;
+    border: 8px solid #A37DDF;
     background: white;
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   }
 #header{
@@ -38,33 +29,46 @@ h1{
       flex-wrap: wrap;
 }
 
-  label{
-      padding: 1%;
-      margin: 1%;
-      width: 200px;
-      height: 200px;
-      border: 2px solid #A37DDF;
-      background: white;
-      border-radius: 2px;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-      transition: all 0.2s ease-in-out;
+label{
+  padding: 1%;
+  margin: 1%;
+  width: 200px;
+  height: 200px;
+  border-width: 8px;
+  border-style: solid;
+  border-color:  #A37DDF;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label:hover{
+  transform: scale(1.05,1.05);
+  border: 2px solid #4AD494;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
   }
-  label:hover{
-    transform: scale(1.05,1.05);
-    border: 2px solid #4AD494;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  }
-  h3{
-      padding-top: 25%;
+h3{
       font-weight: 300;
   }
 h2{
     color: #202020;
 }
-  .question{
+.question{
       padding: 10% 0 0 5%;
-  }
+}
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+/* Button Styling */
 button{
   background-color: #A37DDF; 
   border: none;
@@ -89,46 +93,50 @@ button:hover{
     justify-content: center;
 }
 
-  .modal{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+/* Modal Styling */
+.modal{
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+    width: 100%; 
+    height: 100%; 
+}
 
 
 #modal-color {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #A37DDF;
     width: 60%;
     border-radius: 4px;
     outline: none;
+    transition: all 2s ease-in-out;
   }
 
-
-  /* The Close Button */
 .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    transition: all .2s ease-in-out;
   }
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #181818;
     text-decoration: none;
     cursor: pointer;
   }
-
 #you-got{
     font-weight: 300;
 }
+#not-enough{
+  display: none;
+}
+

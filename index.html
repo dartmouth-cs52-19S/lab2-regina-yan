@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     </head>
     <body>
-        <div class="intro">
+        <div class="intro" id="intro-border">
             <div id="header">
                 <h1>Welcome to Regina's Color Palette!</h1>
                 <img src="assets/palette.png" width="70px" height="70px">
@@ -13,22 +13,22 @@
             <h4>You may have heard about RGB colors. But how are they calculated? This "quiz" will show you how. Let's pretend you're going to mix three colors together.</h3>
         </div>
         <div class="question">
-        <h2>Let's mix in some cyan, shall we?</h2></div>
+        <h2>Let's start off with cyan, shall we?</h2></div>
         <div class="options">
-            <label id="o11" onclick="mark(this)">
-                <h3>Strong Blue!</h3>
-                <input type="radio" value="1" name="question1" class="r">
+            <label id="1">
+                <h3>Strong Cyan!</h3>
+                <input type="radio" value="1" name="question1" class="r" id="o11">
             </label>
-            <label id="o12" onclick="mark(this)">
-                <h3>Medium Blue</h3>
+            <label id="1">
+                <h3>Medium Cyan</h3>
                 <input type="radio" value="3" name="question1" class="r"/>
             </label>
-            <label id="o13" onclick="mark(this)">
+            <label id="1">
                 <h3>Not too much</h3>
                 <input type="radio" value="5" name="question1" class="r"/>
             </label>
-            <label id="o14" onclick="mark(this)">
-                <h3>Barely There</h3>
+            <label id="1">
+                <h3>Just a dollop</h3>
                 <input type="radio" value="7" name="question1" class="r"/>
             </label>
         </div>
@@ -36,20 +36,20 @@
         <div class="question">
             <h2>How much lighter do you want this?</h2></div>
         <div class="options">
-            <label id="o21" onclick="mark(this)">
-                <h3>Barely</h3>
+            <label id="2">
+                <h3>Keep it the same</h3>
                 <input type="radio" value="1" name="question2" class="r">
             </label>
-            <label id="o22" onclick="mark(this)">
+            <label id="2">
                 <h3>A Little</h3>
                 <input type="radio" value="3" name="question2" class="r"/>
             </label>
-            <label id="o23" onclick="mark(this)">
+            <label id="2">
                 <h3>A Lot</h3>
                 <input type="radio" value="5" name="question2" class="r"/>
             </label>
-            <label id="o24" onclick="mark(this)">
-                <h3>As Much As Possible</h3>
+            <label id="2">
+                <h3>Take it Away!</h3>
                 <input type="radio" value="7" name="question2" class="r"/>
             </label>
         </div>
@@ -57,19 +57,19 @@
         <div class="question">
             <h2>Time to throw in some magenta!</h2></div>
         <div class="options">
-            <label id="o31" onclick="mark(this)">
+            <label id="3">
                 <h3>All the magenta!</h3>
                 <input type="radio" value="1" name="question3" class="g">
             </label>
-            <label id="o32" onclick="mark(this)">
+            <label id="3">
                 <h3>Quite a bit</h3>
                 <input type="radio" value="3" name="question3" class="g"/>
             </label>
-            <label id="o33" onclick="mark(this)">
-                <h3>A little bit's fine</h3>
+            <label id="3">
+                <h3>Some is fine</h3>
                 <input type="radio" value="5" name="question3" class="g"/>
             </label>
-            <label id="o34" onclick="mark(this)">
+            <label id="3">
                 <h3>Just a smidge</h3>
                 <input type="radio" value="7" name="question3" class="g"/>
             </label>
@@ -78,19 +78,19 @@
         <div class="question">
             <h2>Now let's tweak that magenta.</h2></div>
         <div class="options">
-            <label id="o41" onclick="mark(this)">
+            <label id="4">
                 <h3>Don't change it</h3>
                 <input type="radio" value="1" name="question4"  class="g">
             </label>
-            <label id="o42" onclick="mark(this)">
+            <label id="4">
                 <h3>Take away a little</h3>
                 <input type="radio" value="3" name="question4"  class="g"/>
             </label>
-            <label id="o43" onclick="mark(this)">
+            <label id="4">
                 <h3>Take away a lot</h3>
                 <input type="radio" value="5" name="question4"  class="g"/>
             </label>
-            <label id="o44" onclick="mark(this)">
+            <label id="4">
                 <h3>No more magenta!</h3>
                 <input type="radio" value="7" name="question4"  class="g"/>
             </label>
@@ -99,19 +99,19 @@
         <div class="question">
             <h2>Finally some yellow.</h2></div>
         <div class="options">
-            <label id="o51" onclick="mark(this)">
+            <label id="5">
                 <h3>Throw it all in!</h3>
                 <input type="radio" value="1" name="question5" class="b">
             </label>
-            <label id="o52" onclick="mark(this)">
+            <label id="5">
                 <h3>A healthy dose</h3>
                 <input type="radio" value="3" name="question5" class="b"/>
             </label>
-            <label id="o53" onclick="mark(this)">
+            <label id="5">
                 <h3>Why not put in a little?</h3>
                 <input type="radio" value="5" name="question5" class="b"/>
             </label>
-            <label id="o54" onclick="mark(this)">
+            <label id="5">
                 <h3>Juuuust a hint</h3>
                 <input type="radio" value="7" name="question5" class="b"/>
             </label>
@@ -119,25 +119,24 @@
         <div class="question">
             <h2>The last adjustment!</h2></div>
         <div class="options">
-            <label id="o61" onclick="mark(this)">
+            <label id="6">
                 <h3>It's perfect just the way it is</h3>
                 <input type="radio" value="1" name="question6" class="b">
             </label>
-            <label id="o62" onclick="mark(this)">
+            <label id="6">
                 <h3>Do a bit of tweaking</h3>
                 <input type="radio" value="3" name="question6" class="b"/>
             </label>
-            <label id="o63" onclick="mark(this)">
+            <label id="6">
                 <h3>Not the biggest fan of the yellow</h3>
                 <input type="radio" value="5" name="question6" class="b"/>
             </label>
-            <label id="o64" onclick="mark(this)">
+            <label id="6">
                 <h3>Take it out!</h3>
                 <input type="radio" value="7" name="question6" class="b"/>
             </label>
         </div>
     <div id="submit"><button id="submitButton">Final Color</button></div>
-
     <div id="modal-answer" class="modal">
         <div class="modal-content" id="modal-color">
             <span class="close">&times;</span>
@@ -146,15 +145,15 @@
                 <h2 id="you-got">
                 </h2>
             </div>
+            <p id="not-enough">You didn't make all the adjustments on the color palette, but that's OK, I still created this color from your choices!</p>
             <p id="answer">I hope you enjoyed learning a little bit about how rgb colors are formed.. with a little twist! RGB stands for red, green blue. We used the opposite colors here - cyan (instead of red), magenta (instead of green), and yellow (instead of blue) to make this process "subtracting from a white background" rather than "adding to a black background". </p>
         </div>
     </div>
 
-
-        <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-        <script src="main.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
     </body>
 </html>
