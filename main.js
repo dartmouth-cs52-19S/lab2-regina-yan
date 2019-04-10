@@ -5,6 +5,7 @@ var choices_b;
 var modal = document.getElementById('modal-answer');
 var span = document.getElementsByClassName("close")[0];
 
+
 // Modal functions adapted from W3Schools
 document.getElementById("submitButton").onclick = function() {
   modal.style.display = "block";
@@ -103,5 +104,31 @@ $('#submit').on('click', function(e) {
 
   // animate modal
   $('#modal-color').stop().animate({opacity: 1}, 1000);
+});
+
+// animate answers as you click
+$('label.one').click(function() {
+  $('label.one').not(this).stop().animate({opacity: 0.5}, 200);
+  $(this).stop().animate({opacity: 1.0}, 200);
+});
+$('label.two').click(function() {
+  $('label.two').not(this).stop().animate({opacity: 0.5}, 200);
+  $(this).stop().animate({opacity: 1.0}, 200);
+});
+$('label.three').click(function() {
+  $('label.three').not(this).stop().animate({opacity: 0.5}, 200);
+  $(this).stop().animate({opacity: 1.0}, 200);
+});
+$('label.four').click(function() {
+  $('label.four').not(this).stop().animate({opacity: 0.5}, 200);
+  $(this).stop().animate({opacity: 1.0}, 200);
+});
+$('label.five').click(function() {
+  $('label.five').not(this).stop().animate({opacity: 0.5}, 200);
+  $(this).stop().animate({opacity: 1.0}, 200);
+});
+$('label.six').click(function() {
+  $('label.six').not(this).stop().animate({opacity: 0.5}, 200);
+  $(this).stop().animate({opacity: 1.0}, 200);
 });
 
